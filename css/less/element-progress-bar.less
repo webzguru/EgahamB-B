@@ -1,0 +1,58 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    3.5.3 PROGRESS BAR STYLE                                                   */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+.progress-bar-mod {
+	.rgba-bgcolor(#F4F4F4);
+	border: none;
+	overflow: inherit;
+	z-index: 1;
+	position: relative;
+	margin-bottom: 30px;
+
+	.progress-bar {
+		.rgba-bgcolor(@color-base);
+		box-shadow: none;
+		position: relative;
+		z-index: 2;
+
+		.sr-only {
+			color: #FFF;
+			.set-position(absolute, auto, auto, -20px, 0, 3);
+			width: 100px;
+			height: 20px;
+			color: #333;
+			width: auto;
+			color: #999;
+			font-size: 12px;
+			padding-left: 2px;
+			clip: auto;
+		}
+	}
+
+	&.sm {
+		height: 3px;
+
+		.progress-bar {
+			height: 3px;
+		}
+	}
+
+	&.md {
+		height: 10px;
+
+		.progress-bar {
+			height: 10px;
+		}
+	}
+
+	&.lg {
+		height: 15px;
+
+		.progress-bar {
+			height: 15px;
+		}
+	}
+}

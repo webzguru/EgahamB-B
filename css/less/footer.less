@@ -1,0 +1,130 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    1.11 FOOTER STYLE                                                          */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+#footer-page {
+	.rgba-bgcolor(#6C6E6C);
+	color: #FFF;
+	padding-top: 20px;
+	padding-bottom: 0;
+
+	a {
+		display: block;
+		color: #EEE;
+		background: url(../images/arrow.png) no-repeat scroll left 5px;
+		padding-left: 15px;
+
+		&:hover,
+		&:focus {
+			color: @color-base;
+			text-decoration: none;
+			padding-left: 20px;
+		}
+	}
+
+	.logo {
+		display: block;
+		float: left;
+		margin: 6px 10px 25px 0;
+		text-align: center;
+	}
+
+	.title {
+		display: block;
+		font-size: 22px;
+		margin-bottom: 20px;
+		padding-bottom: 14px;
+		border-bottom: 1px dotted #AAA;
+	}
+
+	.text {
+		display: block;
+		padding-bottom: 20px;
+
+		&:after {
+			content: '';
+			clear: both;
+			display: block;
+		}
+	}
+
+	ul {
+		&.social-icons {
+			margin: 10px 0;
+			padding:  0;
+			list-style: none;
+		}
+
+		&.social-icons {
+			li {
+				float: left;
+
+				a {
+					background: url(../images/social-icon.png) no-repeat scroll center center #FFF;
+					width: 50px;
+					height: 50px;
+					overflow: hidden;
+					position: relative;
+					margin: 0 10px 20px 0;
+					.set-full-radius(3px);
+
+					&.twitter-icon {
+						background-position: -8px -8px;
+
+						&:hover {
+							background-position: -8px -61px;
+							.rgba-bgcolor(#5EA9DD);
+						}
+					}
+
+					&.facebook-icon {
+						background-position: -164px -8px;
+
+						&:hover {
+							background-position: -164px -61px;
+							.rgba-bgcolor(#3B5998);
+						}
+					}
+
+					&.linkedin-icon {
+						background-position: -85px -8px;
+
+						&:hover {
+							background-position: -85px -61px;
+							.rgba-bgcolor(#0077B5);
+						}
+					}
+
+					&.vimeo-icon {
+						background-position: -242px -6px;
+
+						&:hover {
+							background-position: -242px -59px;
+							.rgba-bgcolor(#17B3E8);
+						}
+					}
+
+					span {
+						.set-position(absolute, auto, auto, auto, -2000px, 1);
+					}
+				}
+			}
+		}
+		&.link-extra {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	.credits {
+		.rgba-bgcolor(#555);
+		color: #AAA;
+		font-size: 14px;
+		margin: 24px 0 0;
+		padding: 16px;
+		text-align: center;
+	}
+}

@@ -1,0 +1,72 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    3.5.6 TAB AND PILLS STYLE                                                  */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+.tab-mod {
+
+	.nav {
+
+		> li {
+
+			> a {
+				&:focus, 
+				&:hover {
+					.rgba-bgcolor(@color-base);
+					border-color: @color-base;
+				}
+			}
+		}
+	}
+
+	.nav-tabs {
+
+		> li {
+
+			&.active {
+
+				> a, 
+				> a:focus, 
+				> a:hover{
+					border-color: @color-base;
+					border-bottom-color: #FFF;
+				
+				}
+			}
+		}
+	}
+
+	.tab-pane {
+		border-color: @color-base;
+		border-bottom-color: @color-base;
+	}
+}
+
+.pillsmod {
+
+	li {
+
+		a {
+
+			&:hover,
+			&:focus {
+				border-color: @color-base;
+			}
+		}
+
+		&.active {
+
+			a,
+			a:hover,
+			a:focus {
+				.rgba-bgcolor(@color-base);
+				border-color: @color-base;
+			}
+		}
+	}
+
+	.tab-content {
+		border-top-color: @color-base;
+	}
+}

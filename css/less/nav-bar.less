@@ -1,0 +1,75 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    1.8 NAVBAR STYLE                                                           */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+nav {
+	border-bottom: 1px solid rgba(55, 55, 55, .1);
+	.set-position(fixed, 0, 0, auto, 0, 11);
+	.rgba-bgcolor(#FFF, .85);
+	.set-transition(0.2s);
+
+	.logo-container {
+		text-align: center;
+		padding: 10px 0;
+		border-bottom: 1px solid rgba(55, 55, 55, .1);
+		.rgba-bgcolor(#FFF, .85);
+	}
+
+	&.nav-fixed {
+		top: -160px !important;
+		.rgba-bgcolor(#FFF, .97) !important;
+	}
+
+	&.menu-nav {
+
+		li {
+
+			a {
+				color: @font-menu-color;
+				.set-transition(0.2s);
+			}
+		}
+
+		> ul {
+
+			a {
+
+				&:hover {
+					background-color: @color-base;
+					color: @font-menu-color-hover;
+				}
+			}
+
+			ul {
+				border-top: 1px solid @color-base;
+				border-bottom: 1px solid @color-base;
+			}
+
+			.submenu {
+
+				&.menu-active {
+					background-color: @color-base;
+				}
+			}
+
+			.menu-active{
+				background-color: @color-base;
+			}
+
+			.menu-nav {
+
+				> ul {
+
+					.submenu {
+
+						&.menu-active {
+							background-color: @color-base;
+						}
+					}
+				}
+			}
+		}
+	}
+}

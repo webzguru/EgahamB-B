@@ -1,0 +1,108 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    3.5.4 MEDIA LIST AND PANELS STYLE                                          */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+.medialist{
+
+	.media {
+		margin-top: 30px;
+	}
+
+	img {
+		width: 90px;
+		height: 90px;
+		padding: 4px;
+		border: 1px solid #E5E5E5;
+		.set-full-radius(@radius-full);
+	}
+
+	.media-body {
+		border: 1px solid #EEE;
+		border-left-width: 5px;
+		padding: 8px;
+		.rgba-bgcolor(#FBFBFB);
+		font-size: 15px;
+
+		b {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		.nested {
+			.rgba-bgcolor(#FFF);
+
+			.media-heading{
+
+				.date-comment {
+					right: 0;
+				}
+			}
+		}
+
+		.media-heading {
+			border-bottom: 1px solid #EEE;
+			font-size: 105%;
+			font-weight: 400;
+			position: relative;
+			padding: 0 8px 6px 0;
+
+			.date-comment {
+				color: #999;
+				font-size: 13px;
+				.set-position(absolute, 2px, 40px, auto, auto, 1);
+			}
+
+			.reply {
+				.rgba-bgcolor(#fff);
+				.set-position(absolute, -8px, -9px, 0, auto, 1);
+				border: none;
+				border-left: 1px solid #eee;
+				margin-top: 0 !important;
+				color: #555;
+				display: block;
+				font-size: 13px;
+				width: 40px;
+
+				&:hover,
+				&:focus {
+					.rgba-bgcolor(@color-base);
+
+					span {
+						color: @font-menu-color-hover;
+					}
+				}
+
+				span {
+					.set-position(absolute, 8px, auto, auto, 11px, 1);
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+.panelmod {
+
+	.panel-heading {
+		.rgba-bgcolor(@color-base);
+		border: 1px solid @color-border;
+		margin-top: -1px;
+		margin-right: -1px;
+		margin-left: -1px;
+
+		.panel-title {
+			font-size: 110%;
+			font-weight: 400;
+		}
+	}
+
+	.panel-footer {
+		.rgba-bgcolor(@color-base);
+		border: 1px solid @color-border;
+		margin-bottom: -1px;
+		margin-right: -1px;
+		margin-left: -1px;
+	}
+}

@@ -1,0 +1,79 @@
+.rgba-bgcolor(@color, @opacity: 1) {
+    background-color: rgba(red(@color), green(@color), blue(@color), @opacity);
+}
+
+.rgba-color(@color, @opacity) {
+    color: rgba(red(@color), green(@color), blue(@color), @opacity);
+}
+
+.set-transition(@duration: 0.2s, @type: all, @effect: ease-in-out) { 
+	-webkit-transition: @type @duration @effect;
+	   -moz-transition: @type @duration @effect;
+	    -ms-transition: @type @duration @effect;
+	     -o-transition: @type @duration @effect;
+	        transition: @type @duration @effect;
+}
+
+.set-transform(@type: scale, @value: 1) { 
+	-webkit-transform: @type(@value);
+	   -moz-transform: @type(@value);
+	    -ms-transform: @type(@value);
+	     -o-transform: @type(@value);
+	        transform: @type(@value);
+}
+
+.set-radius(@valTop: 3px, @valRight: 3px, @valBottom: 3px, @valLeft: 3px) { 
+	-webkit-border-radius: @valTop @valRight @valBottom @valLeft;
+	 -khtml-border-radius: @valTop @valRight @valBottom @valLeft;
+	   -moz-border-radius: @valTop @valRight @valBottom @valLeft;
+         -o-border-radius: @valTop @valRight @valBottom @valLeft;
+	        border-radius: @valTop @valRight @valBottom @valLeft;
+}
+
+.set-full-radius(@val: 0) { 
+	-webkit-border-radius: @val;
+	 -khtml-border-radius: @val;
+	   -moz-border-radius: @val;
+         -o-border-radius: @val;
+	        border-radius: @val;
+}
+
+.set-box-shadow(@type: outset, @val1: 1px, @val2: 1px, @val3: 5px, @color: #C8C8C8, @opacity: 1) {
+    -webkit-box-shadow: @type @val1 @val2 @val3 rgba(red(@color), green(@color), blue(@color), @opacity);
+       -moz-box-shadow: @type @val1 @val2 @val3 rgba(red(@color), green(@color), blue(@color), @opacity);
+            box-shadow: @type @val1 @val2 @val3 rgba(red(@color), green(@color), blue(@color), @opacity);
+}
+
+.set-opacity(@val: 0) {
+	-ms-filter: ~'"progid:DXImageTransform.Microsoft.Alpha(Opacity=@val)"';
+	opacity: @val;
+	-moz-opacity: @val;
+	-khtml-opacity: @val;
+}
+
+.set-image-cover(@url) { 
+    background: url(@url) no-repeat center center fixed;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+.no-margin-padding() {
+	margin: 0;
+	padding: 0;
+}
+
+.set-position(@position: absolute, @top: auto, @right: auto, @bottom: auto, @left: auto, @zindex: 1) {
+	position: @position;
+	top: @top;
+	right: @right;
+	bottom: @bottom;
+	left: @left;
+	z-index: @zindex;
+}
+
+.setShadowText(@val1: 1px, @val2: 1px, @val3: 2px, @color, @opacity: 0.5){
+	-webkit-filter: drop-shadow(@val1 @val2 @val3 rgba(red(@color), green(@color), blue(@color), @opacity));
+	-ms-filter: ~'"progid:DXImageTransform.Microsoft.Dropshadow(OffX=@val2, OffY=@val3, Color=@color)"';
+}

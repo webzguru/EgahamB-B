@@ -1,0 +1,24 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    3.5.5 NOTIFICATION STYLE                                                   */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+.notification {
+	border-left-width: 6px;
+	.rgba-bgcolor(#000, 0);
+	padding: 11px 20px 16px 45px;
+	font-size: 14px;
+	position: relative;
+	.set-full-radius(2px);
+
+	span {
+		font-size: 20px;
+		.set-position(absolute, 16px, auto, auto, 12px, 1);
+	}
+
+	b {
+		font-size: @base-font-size;
+		display: block;
+	}
+}

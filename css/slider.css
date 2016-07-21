@@ -1,0 +1,125 @@
+
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*   SLIDER STYLE                                                                */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.slider {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider .slide {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+	position: absolute;
+}
+
+.slider .slide .slidecontent {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin-top: -150px;
+	text-align: center;
+}
+
+.slider .slide .slidecontent h1 {
+	letter-spacing: -0.03em;
+	font-size: 80px;
+	color: #FFF;
+    text-shadow: 1px 1px 2px #333;
+    filter: dropshadow(color=#333, offx=3, offy=3);
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.slider .slide .slidecontent h1 small span {
+	font-weight: 100;
+	color: #333;
+	text-transform: lowercase;
+	padding: 0 20px 10px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#slideposition {
+	position: absolute;
+	bottom: 60px;
+	left: 10%;
+	z-index: 1;
+}
+
+#slideposition ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#slideposition ul li.indicator {
+    background: none;
+	border: 1px solid #FFF;
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 0 2px;
+    overflow: hidden;
+    padding: 0;
+    width: 50px;
+}
+
+#slideposition ul li.indicator.active {
+	background: white;
+    height: 8px;
+    width: 52px;
+}
+
+@media (max-width: 768px) {
+
+	.slider {
+		height: 700px;
+	}
+
+	.slider .slide .slidecontent h1 {
+		font-size: 60px;
+		line-height: 1;
+	}
+
+}
+
+@media (max-width: 480px) {
+
+	.slider {
+		height: 500px;
+	}
+
+	.slider .slide .slidecontent h1 {
+		font-size: 40px;
+		line-height: 1;
+	}
+
+}
+
+@media (max-width: 375px) {
+
+	.slider .slide .slidecontent h1 {
+		font-size: 40px;
+		line-height: 1;
+	}
+
+}

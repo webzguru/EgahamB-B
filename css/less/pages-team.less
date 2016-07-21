@@ -1,0 +1,123 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    3.14 TEAM PAGE STYLE                                                       */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+#team-list {
+	padding: 100px 0 60px;
+
+	.image-team {
+		.set-full-radius(@radius-full);
+	}
+
+	.icon-social {
+
+		li {
+
+			a {
+				.set-full-radius(@radius-full);
+			}
+		}
+	}
+
+	.image-team {
+		width: 230px;
+		height: 230px;
+		.set-position(absolute, 0, auto, auto, 50%, 1);
+		margin-left: -115px;
+		border: 5px solid #e4e4e4;
+		overflow: hidden;
+	}
+
+	h2 {
+		text-align: center;
+		padding-top: 250px;
+		padding-bottom: 10px;
+	}
+
+	.team-role {
+		text-align: center;
+		text-decoration: none;
+		border-top: 1px dotted #CCC;
+		border-bottom: 1px dotted #CCC;
+		padding: 10px 13px;
+		display: block;
+		color: #333;
+
+		&:hover,
+		&:focus {
+			border: 1px dotted #CCC;
+			.rgba-bgcolor(@color-base, 1);
+		}
+	}
+
+	.description {
+		text-align: center;
+		display: block;
+		margin: 10px 0 30px;
+	}
+
+	.icon-social {
+		float: left;
+		width: 100%;
+		text-align: center;
+		margin: 0 0 50px;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			margin: 0 2px;
+
+			a {
+				.rgba-bgcolor(#333, 1);
+				border: 1px solid #CCC;
+				float: left;
+				display: block;
+				width: 50px;
+				height: 50px;
+
+				&.twitter {
+					background: url(../images/social-icon.png) no-repeat -9px -9px;
+				}
+
+				&.facebook {
+					background: url(../images/social-icon.png) no-repeat -164px -9px;
+				}
+
+				&.linkedin {
+					background: url(../images/social-icon.png) no-repeat -86px -9px;
+				}
+
+				&:hover,
+				&:focus {
+					border: 1px solid #999;
+				}
+
+				&.twitter {
+
+					&:hover,
+					&:focus {
+						background: #666 url(../images/social-icon.png) no-repeat -9px -62px;
+					}
+				}
+
+				&.facebook {
+
+					&:hover,
+					&:focus {
+						background: #666 url(../images/social-icon.png) no-repeat -164px -62px;
+					}
+				}
+
+				&.linkedin {
+
+					&:hover,
+					&:focus {
+						background: #666 url(../images/social-icon.png) no-repeat -86px -62px;
+					}
+				}
+			}
+		}
+	}
+}

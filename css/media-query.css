@@ -1,0 +1,156 @@
+
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*   GENERAL MEDIA QUERY                                                         */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+@media (max-width: 992px) {
+
+	/* BLOG PAGES */
+	.dist-section-right,
+	.dist-section-left {
+		padding: 60px 0 0 !important;
+	}
+}
+
+@media (max-width: 768px) {
+
+	/* BREADCRUMBS */
+	#breadcrumbs.breadcrumbs-fixed {
+		top: 0;
+	}
+
+	/* PAGES HEADER */
+	nav {
+		position: absolute !important;
+	}
+	#header-pages {
+		padding-top: 150px;
+	}
+	#header-pages h1 small {
+		margin-top: 15px;
+	}
+
+	/* ROOMS */
+	#room .image-header h1 {
+		bottom: 0;
+		font-size: 30px;
+		padding: 14px;
+	}
+
+	/* PACKAGE PAGE */
+	.package .detail {
+		position: relative;
+	}
+
+	/* PAGES TEAM */
+	#team-list {
+		padding: 0;
+	}
+	#team-list h2 {
+		margin-top: 120px;
+	}
+
+	/* WIDGET PAGES */
+	.feedback-user {
+		margin: 160px 0 40px;
+	}
+
+	/* ABOUT PAGES */
+	#about .text-container {
+		margin-top: 300px;
+	}
+
+	/* ERROR PAGES */
+	#error-page {
+		padding: 80px 0;
+		text-align: center;
+	}
+	#error-page .icon {
+		float: none;
+		height: 160px;
+		margin-bottom:0;
+		width: auto;
+	}
+
+	/* BLOG PAGES */
+	.dist-section-left {
+		padding: 60px 0 0 !important;
+	}
+	article {
+		margin-bottom: 0;
+	}
+	article header .blog-item-title {
+		font-size: 24px;
+	}
+	#blog {
+		padding: 0;
+	}
+
+	/* BLOG PAGES */
+	#contact-page {
+		padding: 60px 0 80px;
+	}
+	.container-contact {
+		padding: 50px 0;
+	}
+	#contact-page {
+		padding: 60px 0 50px;
+	}
+
+	/* ELEMENTS */
+	.block-container {
+		margin-bottom: 50px;
+	}
+	.section-element {
+		padding: 60px 0 80px;
+	}
+
+@media (max-width: 480px) {
+
+	/* ONEPAGE */
+	#contact .block-container .box-header .icon-container {
+		width: 100%;
+	}
+	#header-pages h1 small {
+		font-size: 24px;
+	}
+
+	/* ROOMS */
+	#room .image-header h1 {
+		bottom: -11px;
+		font-size: 20px;
+		padding: 10px;
+	}
+
+	/* PAGES HEADER */
+	#header-pages.simple-header h1 {
+		font-size: 24px;
+	}
+	#header-pages h1 small {
+		font-size: 16px;
+	}
+
+}
+
+@media (max-width: 375px) {
+
+	/* ONEPAGE */
+	section {
+		padding: 60px 0;
+		position: relative;
+	}
+
+	#contact .block-container .box-header .icon-container {
+		width: 100%;
+	}
+
+	#footer-page .logo {
+		float: none;
+	}
+	
+	#footer-page .title {
+		text-align: center;
+	}
+}

@@ -1,0 +1,47 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    1.8 NAVBAR STYLE                                                           */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+nav {
+
+	&.menu-nav {
+
+		li {
+
+			a {
+				color: @font-menu-color;
+			}
+		}
+
+		> ul {
+
+			a {
+
+				&:hover,
+				&:focus {
+					background-color: @color-base;
+					color: @font-menu-color-hover;
+				}
+			}
+
+			ul {
+				border-top: 1px solid @color-base;
+				border-bottom: 1px solid @color-base;
+			}
+
+			.submenu {
+
+				&.menu-active {
+					background-color: @color-base;
+				}
+			}
+			
+			.menu-active {
+				background-color: @color-base;
+				color: @font-menu-color-hover;
+			}
+		}
+	}
+}

@@ -1,0 +1,314 @@
+  /*
+
+    Theme Name: THREELEAVES - Responsive Hotel Template
+    Author: Poporoso
+    Support: c.birrillo@gmail.com
+    Created: 21/02/2014
+    Description: THREELEAVES is the perfect template for hotel / motel / resort or travel websites and of course you can use this theme for any kind of business websites.
+    Version: 1.1
+    Tags: Booking, Hotel, Accommodation, Resort, Spa, Travel, B&B, Hostel, Lodge, Modern, Holiday, Motel, Inn, Vacation, Responsive, Bootstrap
+
+    ===============================================================
+
+    TABLE OF CONTENT
+
+    1 GENERAL STYLING
+    --------------------------------
+       1.2 BASIC - TYPOGRAFY STYLE
+       1.3 SPINNER
+       1.4 DATEPICKER
+       1.5 SLIDER
+       1.6 BUTTON
+       1.7 SECTION
+       1.8 NAVBAR
+       1.9 BREADCRUMBS
+       1.10 PAGINATION
+       1.11 FOOTER
+
+    2 HOME PAGE
+    --------------------------------
+       2.1 HEADER
+       2.2 PACKAGE
+       2.3 GALLERY
+       2.4 BLOG
+       2.5 CONTACT
+       2.6 FEEDBACK
+       2.7 NEWSLETTER
+       2.8 BOOKING
+
+    3 PAGES
+    --------------------------------
+       3.1 HEADER PAGES
+       3.2 WIDGET FORM
+       3.3 WIDGET BOOKING
+       3.4 WIDGET GALLERY
+
+       3.5 ELEMENTS PAGES
+       -----------------------------
+            3.5.1 ACCORDIONS
+            3.5.2 COULUMNS
+            3.5.3 PROGRESS BAR
+            3.5.4 MEDIA LIST AND PANELS
+            3.5.5 NOTIFICATIONS
+            3.5.6 TABS AND PILLS
+            3.5.7 TYPOGRAPHY 
+
+       3.6  ABOUT
+       3.7  BLOG
+       3.8  CONTACT
+       3.9  ERROR
+       3.10 GALLERY
+       3.11 PACKAGE
+       3.12 ROOMS
+       3.13 SERVICES
+       3.14 TEAM
+
+    =============================================================== 
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600|Philosopher:400,700);
+
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    1.2 BASIC / TYPOGRAFY STYLE                                                */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+body {
+    overflow-x: hidden;
+    font-family: @base-font;
+    color: @base-font-color;
+    font-size: @base-font-size;
+    font-weight: @base-font-weight;
+    line-height: 1.6;
+}
+
+
+a {
+    outline: 0 !important;
+    color: #333;
+    .set-transition(all, 0.4s, ease-in-out);
+
+    &:hover, 
+    &:focus, 
+    &:active, 
+    &.active {
+        text-decoration: none;
+        color: @color-base;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 10px 0;
+    font-weight: 100;
+}
+
+h1 {
+
+    small {
+        display: block;
+        color: #FFF;
+    }
+}
+
+b, 
+strong {
+    font-weight: 600;
+}
+
+.line-separator {
+    height: 1px;
+    color: #DDD;
+    margin: 50px 0 20px;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+label {
+    display: block;
+    font-weight: 400;
+}
+
+.button-scroll {
+    .rgba-bgcolor(#FFF, .3);
+    border: 1px solid #FFF;
+    .set-position(absolute, auto, auto, auto, 50%, 1);
+    margin-left: -65px;
+    bottom: 18px;
+    font-size: 13px;
+    padding: 14px 10px;
+    width: 130px;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    line-height: 0;
+    .set-full-radius(@radius-base);
+
+    &:hover,
+    &:focus {
+        .rgba-bgcolor(@color-base, .8);
+        border-color: @color-border;
+        color: #333;
+    }
+}
+
+.top-button {
+    .set-position(fixed, auto, 10px, 10px, auto, 10);
+    .set-opacity(0);
+    .set-transition(all, 0.6s, ease-in-out);
+    background: none !important;
+
+    &.show {
+        .set-opacity(99);
+    }
+
+    .icon-top {
+        .rgba-bgcolor(#333, .3);
+        .set-full-radius(3px);
+        border: 1px solid rgba(55, 55, 55, 0.3);
+        color: #333;
+        display: block;
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+        .set-transition(all, 0.6s, ease-in-out);
+
+        &:hover,
+        &:focus {
+            .rgba-bgcolor(#333, .8);
+        }
+    }
+}
+
+
+
+.dist-section-right {
+    padding-right: 30px !important;
+}
+
+.dist-section-left {
+    padding-left: 30px !important;
+}
+
+.form-control {
+    padding: 12px;
+    height: 44px;
+    border-color: #E5E5E5;
+    width: 100%;
+    box-shadow: none;
+    .set-full-radius(@radius-base);
+
+    &:focus {
+        border-color: @color-border;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.3);
+        outline: 0 none;
+    }
+}
+
+
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    1.2b SPINNER STYLE                                                         */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+
+.ui-spinner {
+    a {
+        &.ui-spinner-up,
+        &.ui-spinner-down {
+            background: @color-base;
+            border: 1px solid @color-border;
+
+            &:hover, 
+            &:focus, 
+            &:hover, 
+            &:focus {
+                background: #FFF;
+                border: 1px solid #E5E5E5;
+                color: #333;
+            }
+        }
+    }
+}
+
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    1.2c DATEPICKER STYLE                                                      */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+.datepicker {
+
+    > .datepicker_header {
+        border-top: 4px solid @color-base;
+
+        > a {
+
+            &:hover {
+                .rgba-bgcolor(@color-base, 1);
+                color: #333;
+            }
+        }
+    }
+
+    > .datepicker_inner_container {
+    
+        > .datepicker_calendar {
+
+            .datepicker_table {
+
+                > tbody {
+                
+                    > tr {
+
+                        > td {
+                        
+                            &.active, &:hover {
+                                .rgba-bgcolor(@color-base, 1);
+                                color: #333;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    1.2d SLIDER STYLE                                                          */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+.slider {
+    .slide {
+        .slidecontent { 
+            h1 {
+                font-family: @second-font;
+                small {
+                    font-family: @base-font;
+                }
+            }
+        }
+    }
+}

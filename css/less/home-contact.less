@@ -1,0 +1,62 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    2.5 HOME CONTACT STYLE                                                     */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+#contact {
+	padding-bottom: 0;
+
+	.block-container {
+		position: relative;
+		overflow: hidden;
+
+		.box-header {
+			.rgba-bgcolor(#FFF, .8);
+			border-top: 1px solid #EBEBEB;
+			border-bottom: 5px solid #FFF;
+			position: relative;
+			margin-bottom: 300px;
+			z-index: 2;
+
+			.icon-container {
+				float: left;
+				text-align: center;
+				width: 33.3333%;
+				padding: 10px 0;
+				color: #333;
+				text-decoration: none;
+				margin-top: 4px;
+				.set-transition(0.4s);
+
+				&:hover {
+					.rgba-bgcolor(@color-base, .7);
+				}
+
+				.icon {
+					display: block;
+					font-size: 35px;
+					padding: 10px 0;
+				}
+			}
+		}
+
+		.maps-container {
+			.set-position(absolute, -300px, 0, 0, 0, 1);
+		}
+
+		.form-container {
+			position: relative;
+			.rgba-bgcolor(#FFF, .6);
+			z-index: 2;
+			border-top: 5px solid #FFF;
+			color: #333;
+			padding: 50px 0 100px;
+
+			.form-control {
+				border-color: #DDD;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}

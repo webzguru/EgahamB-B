@@ -1,0 +1,24 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    2.7 HOME NEWSLETTER STYLE                                                  */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+#newsletter {
+
+	&:after {
+		.rgba-bgcolor(@color-base, .7);
+	}
+
+	.input-group {
+
+		.input-group-addon {
+			.rgba-bgcolor(@color-base);
+			border-color: @color-border;
+		}
+
+		button, .form-control {
+			border-color: @color-border;
+		}
+	}
+}

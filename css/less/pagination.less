@@ -1,0 +1,37 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    1.10 PAGINATION STYLE                                                      */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+.pagination {
+    padding: 0;
+
+	> li {
+		> a {
+			color: @base-font-color;
+			font-size: 14px;
+			.set-full-radius(2px);
+
+			&:hover, &:focus, &:hover, &:focus {
+				.rgba-bgcolor(@color-base, 1);
+				border-color: @color-border;
+				color: @font-menu-color-hover;
+			}
+
+			&.active {
+				.rgba-bgcolor(@color-base, 1);
+				border-color: @color-border;
+				color: @font-menu-color-hover;
+			}
+		}
+
+		&:first-child, &:last-child {
+
+			> a, > span {
+				padding: 6px;
+				color: @base-font-color;		
+			}
+		}
+	}
+}

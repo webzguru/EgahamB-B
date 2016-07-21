@@ -1,0 +1,41 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    1.9 BREADCRUMBS STYLE                                                      */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+#breadcrumbs {
+    border-bottom: 1px solid #E2E2E2;
+    border-top: 1px solid rgba(255, 255, 255, .6);
+    font-size: 13px;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+	.set-transition();
+	.set-position(absolute, auto, 0, 0, 0, 1);
+	.rgba-bgcolor(#FFF, .5);
+
+	&.breadcrumbs-fixed {
+		.rgba-bgcolor(#FAFAFA, .9);
+		.set-position(fixed, 52px, 0, auto, 0, 3);
+	}
+
+	a {
+		border: 1px solid rgba(255, 223, 43, 0);
+		text-decoration: none;
+		.set-full-radius(@radius-base);
+
+		&:hover,
+		&:focus {
+			.rgba-bgcolor(@color-base, 1);
+			border: 1px solid @color-border;
+			padding: 1px 6px;
+			color: #333;
+		}
+	}
+
+	.glyphicon {
+		color: #999;
+		font-size: 10px;
+	}
+}

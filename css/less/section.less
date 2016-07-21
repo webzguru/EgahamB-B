@@ -1,0 +1,33 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    1.7 SECTION STYLE                                                          */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+section {
+	position: relative;
+	padding: 100px 0 130px;
+
+	.section-title, .section-sub-title {
+		text-align: center;
+	}
+
+	.section-title {
+		font-size: 40px;
+		font-family: @second-font;
+		display: block;
+		.setShadowText(1px, 1px, 2px, #999);
+	}
+
+	.section-sub-title {
+		display: block;
+		font-size: 20px;
+		.setShadowText(1px, 1px, 1px, #CCC);
+		padding-bottom: 30px;
+	}
+}
+
+.section-grey {
+	.rgba-bgcolor(@color-base, 1);
+	.rgba-bgcolor(#EFEFEF, 1);
+}

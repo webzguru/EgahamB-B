@@ -1,0 +1,77 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    2.4 HOME BLOG STYLE                                                        */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+#blog {
+	.post {
+		position: relative;
+		padding-bottom: 20px;
+		margin: 0 10px;
+
+		header, footer {
+			.rgba-bgcolor(#FFF);
+			border-left: 1px solid #EFEFEF;
+			border-right: 1px solid #EFEFEF;
+		}
+
+		footer {
+			padding: 10px 0 30px;
+			border-bottom: 1px solid #EFEFEF;
+		}
+
+		img {
+			margin-bottom: 10px;
+			border-bottom: 1px solid #EEE;
+		}
+	}
+
+	.post-container {
+		.rgba-bgcolor(#FFF);
+		border-left: 1px solid #EFEFEF;
+		border-right: 1px solid #EFEFEF;
+	}
+
+	.post-date {
+		.set-position(absolute, 10px, auto, auto, 0, 1);
+		.rgba-bgcolor(#FFF, .8);
+		padding: 10px 20px;
+		border: 1px solid #FFF;
+		border-left: none;
+		color: #333;
+		display: block;
+	}
+
+	.post-author {
+		display: block;
+		text-align: center;
+		font-size: 14px;
+		padding: 6px 0;
+		color: #AAA;
+	}
+
+	.post-title {
+		text-align: center;
+		font-size: 18px;
+		text-transform: uppercase;
+		margin: 0;
+		padding: 0 0 16px;
+		position: relative;
+		font-weight: 400;
+
+		&:after {
+			background: none repeat scroll 0 0 #DDD;
+			.set-position(absolute, auto, auto, 0, 50%, 1);
+			content: "";
+			height: 1px;
+			width: 40px;
+			margin-left: -20px;
+		}
+	}
+
+	.post-container {
+		display: block;
+		padding: 20px;
+	}
+}

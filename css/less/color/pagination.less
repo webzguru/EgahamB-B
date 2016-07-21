@@ -1,0 +1,25 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    1.10 PAGINATION STYLE                                                      */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+.pagination {
+
+	> li {
+		> a {
+
+			&:hover, &:focus, &:hover, &:focus {
+				.rgba-bgcolor(@color-base, 1);
+				border-color: @color-border;
+				color: @font-menu-color-hover;
+			}
+
+			&.active {
+				.rgba-bgcolor(@color-base, 1);
+				border-color: @color-border;
+				color: @font-menu-color-hover;
+			}
+		}
+	}
+}

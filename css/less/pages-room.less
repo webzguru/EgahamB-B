@@ -1,0 +1,100 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    3.12 ROOMS PAGE STYLE                                                      */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+#room {
+	padding: 100px 0 90px;
+
+	.header-room {
+		position: relative;
+		padding: 18px 25px 25px;
+		.rgba-bgcolor(#f9f9f9);
+		border: 1px solid #e6e6e6;
+		margin-bottom: 20px;
+
+		button {
+			margin-top: 30px;
+			width: 100%;
+			padding: 12px 0;
+		}
+	}
+
+	.room-image {
+		border-top: 4px solid @color-base;
+	}
+
+	.info-room {
+		.rgba-bgcolor(#FFF, .7);
+		border-top: 1px solid #FFF;
+		text-align: justify;
+
+		h1 {
+			font-weight: 400;
+		}
+	}
+
+	.room-description, .accordion {
+		margin-top: 50px;
+	}
+
+	.room-description {
+		text-align: justify;
+	}
+
+	.image-header {
+		position: relative;
+
+		h1 {
+			border: 1px solid #FFF;
+			border-left: 5px solid @color-base;
+			padding: 20px 20px 24px;
+			.set-position(absolute, auto, 0, 20px, 0, 1);
+			.rgba-bgcolor(#FFF, .7);
+		}
+	}
+
+	.room-detail {
+		margin-top: 18px;
+
+		span {
+			border: 1px solid #AAA;
+			color: #AAA;
+			margin-right: 10px;
+			padding: 2px;
+			font-size: 14px;
+			.set-full-radius(@radius-full);
+		}
+	}
+
+	.price {
+		.rgba-bgcolor(#F9F9F9);
+		border: 1px solid #E6E6E6;
+		display: block;
+		font-size: 34px;
+		margin: 50px 0;
+		padding: 10px;
+		text-align: center;
+		.set-full-radius(3px);
+	}
+
+	.other-rooms {
+		margin: 20px -15px 0;
+	}
+
+	.gallery-block {
+		margin-top: 70px;
+
+		h4 {
+			font-size: 22px;
+			margin: 0;
+			border-bottom: 3px solid @color-base;
+			padding-bottom: 8px;
+		}
+	}
+
+	.tab-mod {
+		margin-top: 60px;
+	}
+}

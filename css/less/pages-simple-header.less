@@ -1,0 +1,27 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    3.1 HEADER PAGES STYLE                                                     */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+#header-pages {
+
+	&.simple-header {
+
+		#breadcrumbs {
+		   border-top-color: #E5E5E5;
+		}
+
+		h1 {
+			font-size: 50px;
+
+			b {
+			    .rgba-bgcolor(@color-base, 1);
+				border: 1px solid @color-border;
+				font-family: @second-font;
+				padding: 3px 20px;
+				.set-full-radius(3px);
+			}
+		}
+	}
+}

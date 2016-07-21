@@ -1,0 +1,98 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    1.2 BASIC / TYPOGRAFY STYLE                                                */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+a {
+	&:hover, 
+	&:focus, 
+	&:active, 
+	&.active {
+		color: @color-base;
+	}
+}
+
+.button-scroll {
+
+	&:hover,
+	&:focus {
+		.rgba-bgcolor(@color-base, .8);
+		border-color: @color-border;
+	}
+}
+
+.form-control {
+
+	&:focus {
+		border-color: @color-border;
+		.set-box-shadow(outset, 0, 0, 8px, @color-base, .6);
+	}
+}
+
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    1.2b SPINNER STYLE                                                         */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+.ui-spinner {
+	a {
+		&.ui-spinner-up,
+		&.ui-spinner-down {
+			background: @color-base;
+			border: 1px solid @color-border;
+		}
+	}
+
+	.ui-icon {
+		color: @font-menu-color-hover;
+
+		&:hover,
+		&:focus{
+			color: @color-base;
+		}
+	}
+}
+
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    1.2c DATEPICKER STYLE                                                      */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+.datepicker {
+
+	> .datepicker_header {
+		border-top: 4px solid @color-base;
+
+		> a {
+
+			&:hover {
+				.rgba-bgcolor(@color-base, 1);
+			}
+		}
+	}
+
+	> .datepicker_inner_container {
+	
+		> .datepicker_calendar {
+
+			.datepicker_table {
+
+				> tbody {
+				
+					> tr {
+
+						> td {
+						
+							&.active, &:hover {
+								.rgba-bgcolor(@color-base, 1);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

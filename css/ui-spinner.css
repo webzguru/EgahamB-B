@@ -1,0 +1,78 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    UI SPINNER STYLE                                                           */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+.ui-spinner {
+    border: none;
+    background: rgba(255,255,255, 0);
+    height: 44px;
+    font-size: 14px;
+    padding: 0;
+    width: 100%;
+    overflow: inherit;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.ui-spinner .ui-spinner-input {
+    height: 44px;
+    margin: 0;
+    padding: 10px;
+    height: 44px;
+    border: 1px solid #DDD;
+    background-color: #FFF;
+    color: #555;
+    font-size: 14px;
+}
+
+.ui-spinner .ui-spinner-input:focus {
+    color: #333;
+}
+
+.ui-spinner a.ui-spinner-up, 
+.ui-spinner a.ui-spinner-down {
+    background: #E4E4E4;
+    height: 52%;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+}
+
+.ui-spinner a.ui-spinner-up {
+    -webkit-border-radius: 0 3px 0 0;
+     -khtml-border-radius: 0 3px 0 0;
+       -moz-border-radius: 0 3px 0 0;
+         -o-border-radius: 0 3px 0 0;
+            border-radius: 0 3px 0 0;
+}
+
+.ui-spinner a.ui-spinner-down {
+    top: auto;
+    bottom: 0;
+    -webkit-border-radius: 0 0 3px 0;
+     -khtml-border-radius: 0 0 3px 0;
+       -moz-border-radius: 0 0 3px 0;
+         -o-border-radius: 0 0 3px 0;
+            border-radius: 0 0 3px 0;
+}
+
+.ui-spinner .ui-icon {
+    left: 4px;
+    margin-top: -9px;
+    position: absolute;
+    top: 50%;
+    font-size: 10px;
+}
+
+.ui-spinner a.ui-spinner-up:hover, 
+.ui-spinner a.ui-spinner-down:hover,
+.ui-spinner a.ui-spinner-up:focus, 
+.ui-spinner a.ui-spinner-down:focus {
+    background: #CDCDCD;
+}

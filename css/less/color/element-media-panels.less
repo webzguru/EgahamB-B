@@ -1,0 +1,39 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    3.5.4 MEDIA LIST AND PANELS STYLE                                          */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+.medialist{
+
+	.media-body {
+
+		.media-heading {
+
+			.reply {
+
+				&:hover,
+				&:focus {
+					.rgba-bgcolor(@color-base);
+
+					span {
+						color: @font-menu-color-hover;
+					}
+				}
+			}
+		}
+	}
+}
+
+.panelmod {
+
+	.panel-heading {
+		.rgba-bgcolor(@color-base);
+		border-color: @color-border;
+	}
+
+	.panel-footer {
+		.rgba-bgcolor(@color-base);
+		border-color: @color-border;
+	}
+}

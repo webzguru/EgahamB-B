@@ -1,0 +1,68 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    1.6 BUTTON                                                                 */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+.btn { 
+	position: relative;
+	.set-transition();
+	.set-full-radius(@radius-base);
+	font-size: 14px;
+
+	.icon { 
+		margin-right: 6px;
+	}
+}
+
+.btn-default {
+	.rgba-bgcolor(@color-base);
+    border-color: @color-border;
+    color: #333;
+
+	&.active, 
+	&.focus, 
+	&:active, 
+	&:focus, 
+	&:hover {
+		.rgba-bgcolor(#FFF);
+		border-color: #CCC;
+		color: #333;
+	}
+}
+
+.open {
+	> .dropdown-toggle {
+		&.btn-default {
+			.rgba-bgcolor(#FFF);
+			border-color: #CCC;
+			color: #333;
+		}
+		&.btn-reverse {
+			.rgba-bgcolor(@color-base);
+			border-color: @color-border;
+		}
+	}
+}
+
+.btn-reverse { 
+	.rgba-bgcolor(#FFF);
+    border-color: #CCC;
+    color: #333;
+
+	&.active, 
+	&.focus, 
+	&:active, 
+	&:focus, 
+	&:hover {
+		.rgba-bgcolor(@color-base);
+		border-color: @color-border;
+	}
+}
+
+.btn-group-lg {
+	> .btn, .btn-lg {
+		font-size: 14px;
+		height: 44px;
+	}
+}

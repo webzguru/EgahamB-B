@@ -1,0 +1,36 @@
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    3.7 BLOG PAGES STYLE                                                       */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+#blog-column {
+
+	.tags {
+
+		ul {
+
+			li {
+
+				a {
+
+					&:hover,
+					&:focus {
+						.rgba-bgcolor(@color-base);
+						border: 1px solid @color-border;
+					}
+				}
+			}
+		}
+	}
+}
+
+article {
+
+	.blog-item-media {
+
+		&:hover {
+			border-top: 3px solid @color-base;
+		}
+	}
+}
