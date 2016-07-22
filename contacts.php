@@ -11,7 +11,7 @@
 */
 
 	// Configuration
-	$email_site = "cherrycroftbandb@gmail.com";
+	$email_site = "info@webz.guru";
 
 		// Datamail
 		$name      = stripslashes( $_POST['name'] );
